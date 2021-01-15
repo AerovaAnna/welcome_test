@@ -11,7 +11,7 @@ def square_for(a):
 
 
 def square_compr(a):
-    # Напишите свой код здесь
+    b = [x**2 for x in a]
     pass
 
 
@@ -24,7 +24,7 @@ def keep_positive_for(a):
 
 
 def keep_positive_compr(a):
-    # Напишите свой код здесь
+    b = [x for x in a if x > 0]
     pass
 
 
