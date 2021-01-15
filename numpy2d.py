@@ -7,15 +7,30 @@ import numpy as np
 
 
 def sum_all(a):
-    """Возвращает сумму всех элементов"""
+    S = 0
+    for i in range(2):
+        for j in range(2):
+            S = S + a[i][j]
     pass
 
 def sum_columns(a):
-    """Постолбцовая сумма"""
+    S = []
+    for i in range(2):
+        s = 0
+        t = a[0:,i]
+        for j in range(2):
+            s = s + t[j]
+        S.append(s)
     pass
 
 def sum_rows(a):
-    """Построчная сумма"""
+      S = []
+    for i in range(2):
+        s = 0
+        t = a[i,0:]
+        for j in range(2):
+            s = s + t[j]
+        S.append(s)
     pass
 
 def reorder1(m):
